@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- external css link -->
+    <link rel="stylesheet" href="./dist/css/main.css" />
+
+    <script
+      src="https://kit.fontawesome.com/9cb63c3383.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- external js link -->
+    <script defer src="./src/js/index.js"></script>
+
+    <title>Frontend Mentor | [Blogr]</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container flex flex-col">
+        <nav class="header-nav flex">
+          <a class="header-nav--logo" href="#" aria-label="logo"
+            ><img
+              class="header-nav--logo_img"
+              src="./src/images/logo.svg"
+              alt="logo"
+              aria-hidden="true"
+          /></a>
+
+          <a
+            class="header-nav--hamburger"
+            href="#"
+            aria-label="hamburger button"
+            ><img
+              src="./src/images/icon-hamburger.svg"
+              alt=""
+              aria-hidden="true"
+          /></a>
+
+          <ul class="header-nav--list flex flex-col">
+            <li class="header-nav--list_item nav-list">
+              <div class="flex flex-col">
+                <p class="header-nav--list_item-heading">
+                  Product
+                  <span>
+                    <picture>
+                      <source
+                        class="nav-btn_down"
+                        media="(min-width: 768px)"
+                        srcset="./src/images/icon-arrow-light.svg"
+                      />
+                      <img
+                        class="nav-btn_down"
+                        src="./src/images/icon-arrow-dark.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </picture>
+                    <picture>
+                      <source
+                        class="nav-btn_up"
+                        media="(min-width: 768px)"
+                        srcset="./src/images/angle-up-light.svg"
+                      />
+                      <img
+                        class="nav-btn_up"
+                        src="./src/images/angle-up-dark.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </picture>
+                  </span>
+                </p>
+                <ul class="header-nav--list_item-lists flex flex-col">
+                  <li>Overview</li>
+                  <li>Pricing</li>
+                  <li>Marketplace</li>
+                  <li>Features</li>
+                  <li>Integrations</li>
+                </ul>
+              </div>
+            </li>
+            <li class="header-nav--list_item nav-list">
+              <div class="flex flex-col">
+                <p class="header-nav--list_item-heading">
+                  Company
+                  <span>
+                    <picture>
+                      <source
+                        class="nav-btn_down"
+                        media="(min-width: 768px)"
+                        srcset="./src/images/icon-arrow-light.svg"
+                      />
+                      <img
+                        class="nav-btn_down"
+                        src="./src/images/icon-arrow-dark.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </picture>
+                    <picture>
+                      <source
+                        class="nav-btn_up"
+                        media="(min-width: 768px)"
+                        srcset="./src/images/angle-up-light.svg"
+                      />
+                      <img
+                        class="nav-btn_up"
+                        src="./src/images/angle-up-dark.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </picture>
+                  </span>
+                </p>
+                <ul class="header-nav--list_item-lists flex flex-col">
+                  <li>About</li>
+                  <li>Team</li>
+                  <li>Blog</li>
+                  <li>Careers</li>
+                </ul>
+              </div>
+            </li>
+            <li class="header-nav--list_item nav-list">
+              <div class="flex flex-col">
+                <p class="header-nav--list_item-heading">
+                  Connect
+                  <span>
+                    <picture>
+                      <source
+                        class="nav-btn_down"
+                        media="(min-width: 768px)"
+                        srcset="./src/images/icon-arrow-light.svg"
+                      />
+                      <img
+                        class="nav-btn_down"
+                        src="./src/images/icon-arrow-dark.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </picture>
+                    <picture>
+                      <source
+                        class="nav-btn_up"
+                        media="(min-width: 768px)"
+                        srcset="./src/images/angle-up-light.svg"
+                      />
+                      <img
+                        class="nav-btn_up"
+                        src="./src/images/angle-up-dark.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </picture>
+                  </span>
+                </p>
+                <ul class="header-nav--list_item-lists flex flex-col">
+                  <li>Contact</li>
+                  <li>Newsletter</li>
+                  <li>LinkedIn</li>
+                </ul>
+              </div>
+            </li>
+            <li class="header-nav--list_item flex flex-col">
+              <div class="header-nav--list_item-heading">
+                <a href="#">Login</a>
+              </div>
+              <a class="header-nav--list_item-signup btn btn-gradient" href="#"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <h1 class="header-mainheading">
+          A modern <span>publishing platform</span>
+        </h1>
+        <p class="header-text">
+          Grow your audience and build your online brand
+        </p>
+        <div class="header-btns flex">
+          <a class="btn header-btns--btn" href="#">Start for Free</a>
+          <a class="btn btn-transparent header-btns--btn" href="#"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section section-future">
+        <div class="container grid">
+          <h2 class="section-future--heading section-future--heading_main">
+            Designed for the future
+          </h2>
+
+          <picture class="section-future--img">
+            <source
+              media="(min-width: 768px)"
+              srcset="./src/images/illustration-editor-desktop.svg"
+            />
+            <img
+              src="./src/images/illustration-editor-mobile.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </picture>
+
+          <article
+            class="section-future--article section-future--article_1 flex flex-col"
+          >
+            <h2 class="section-future--heading">
+              Introducing an extensible editor
+            </h2>
+            <p class="section-future--article_text">
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+          </article>
+          <article
+            class="section-future--article section-future--article_2 flex flex-col"
+          >
+            <h2 class="section-future--heading">Robust content management</h2>
+            <p class="section-future--article_text">
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you’re in full control.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="section section-infra">
+        <div class="container">
+          <div class="section-infra--circle_desktop"></div>
+          <picture class="section-infra--image">
+            <img
+              src="./src/images/illustration-phones.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </picture>
+          <div class="wrapper">
+            <div class="section-infra--circle"></div>
+
+            <h2 class="section-infra--heading">
+              State of the Art Infrastructure
+            </h2>
+            <p class="section-infra--text" s>
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section section-future section-future--2">
+        <div class="container grid">
+          <picture class="section-future--img section-future--2_img_2">
+            <source
+              media="(min-width:768px)"
+              srcset="./src/images/illustration-laptop-desktop.svg"
+            />
+            <img
+              src="./src/images/illustration-laptop-mobile.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </picture>
+          <article
+            class="section-future--article section-future--2_article_2-1 flex flex-col"
+          >
+            <h2 class="section-future--heading">Free, open, simple</h2>
+            <p class="section-future--article_text">
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+          </article>
+          <article
+            class="section-future--article section-future--2_article_2-2 flex flex-col"
+          >
+            <h2 class="section-future--heading">Powerful tooling</h2>
+            <p class="section-future--article_text">
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container flex flex-col">
+        <img
+          class="footer-logo"
+          src="./src/images/logo.svg"
+          alt="logo"
+          aria-hidden="true"
+        />
+
+        <ul class="footer-navlist flex flex-col">
+          <li class="footer-navlist--header">
+            Product
+            <ul class="footer-navlist--header_item flex flex-col">
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integrations</li>
+            </ul>
+          </li>
+
+          <li class="footer-navlist--header">
+            Company
+            <ul class="footer-navlist--header_item flex flex-col">
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+          </li>
+
+          <li class="footer-navlist--header">
+            Connect
+            <ul class="footer-navlist--header_item flex flex-col">
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/dabinderudhan" target="_blank"
+          >Dabinder Udhan</a
+        >.
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+body {
+  font-family: $ff-default;
+  font-size: $fs-default;
+  color: $color-white-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ff-heading;
+  color: $color-primary-headings;
+}
+
+a {
+  font-family: $ff-heading;
+  font-size: 1rem;
+  font-weight: $fw-darkest;
+}
